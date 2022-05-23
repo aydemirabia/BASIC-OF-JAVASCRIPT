@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While-DoWhile</title>
+</head>
+<body>
+    <script>
+        var adet=parseInt(prompt("Kaç adet asal sayı istiyorsunuz?: "));
+        var bulunan=0;
+        var sayi=3;
+        while(bulunan<adet){
+            var asal=0;
+            for(i= 2 ;i<sayi;i++){ 
+                if(sayi % i == 0){
+                    asal=1;
+                    break;
+                }
+            }
+            if(asal==0){
+                bulunan++;
+                document.write(bulunan+". sayı: "+sayi+"<br>");
+            }
+            sayi++;
+    }
+    </script>
+</body>
+</html>

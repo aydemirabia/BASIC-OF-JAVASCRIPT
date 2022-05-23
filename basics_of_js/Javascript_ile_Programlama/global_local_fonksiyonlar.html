@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global ve Local Değişkenler</title>
+</head>
+<body>
+    <p id="goster"></p>
+    <script>
+        var pi =3.14; //global değişken
+        function alanHesap(r){
+            //var pi=3.14; //local değişken
+            var alan=pi*r*r;
+            return alan;
+        }
+        function cevreHesap(r){
+            var cevre=2* pi* r;
+            return cevre;
+        }
+        function yazdir(){
+            document.getElementById("goster").innerHTML=
+            "Alan: "+alanHesap(5) + " Cevre: "+cevreHesap(6);
+        }
+        yazdir();
+        /*yazdır(); yazmak yerine 
+        ({function yazdir(){
+            document.getElementById("goster").innerHTML=
+            "Alan: "+alanHesap(5) + " Cevre: "+cevreHesap(6);})();
+            şeklinde de yazdırabiliriz.
+
+
+        */
+    </script>
+    
+</body>
+</html>
+
+<!--
+    eğer tanımladığımız değişkenin başına var koyduysak 
+    global(her yere erişim) değişken olur.
+    eğer local yerde tanımlayıp başına var koymazsak global
+    değişkne olur her yerde tanımlanır.
+     
+-->

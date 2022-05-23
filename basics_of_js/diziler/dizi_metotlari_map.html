@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dizi Metotları- map() & filter()</title>
+</head>
+<body>
+    <script>
+        dizi=[3,7,6,9,15,23,18,45,10,34];
+        yeniDizi=[];
+        //Array Map fonksiyonu, kendisine parametre olarak gönderilen 
+        //dizinin her bir elemanını belirlenen bir işleme tabi tutup, 
+        //yeni bir dizi meydana getirir. 
+        /*
+        yeniDizi=dizi.map(function(eleman){
+            return eleman*3;
+        });*/
+        yeniDizi=dizi.map(function(eleman){
+            if(eleman<20){
+                return eleman*3;
+            }
+            else{
+                return eleman;
+            }
+        });
+        console.log(yeniDizi);
+    </script>
+</body>
+</html>

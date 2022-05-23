@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dizi Metotları- map() & filter()</title>
+</head>
+
+<body>
+    <script>
+        yeniDizi = [];
+        var dizi = [3, 7, 6, 9, 15, 23, 18, 45, 65, 66, 34, 12];
+        yeniDizi = dizi.filter(function (eleman, indeks) {
+            if (eleman < 20) {
+                return eleman;
+            }
+        });
+        console.log(dizi);
+        console.log(yeniDizi);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Nesnesi ile Tarih Farkını Bulma</title>
+</head>
+<body>
+    <input type="date" id="giris" name="">
+    <input type="date" id="cikis" name="">
+    <input type="button" value="Hesapla" onclick="hesapla()">
+    <script>
+        function hesapla(){
+            var giris=document.getElementById("giris").value;
+            var cikis=document.getElementById("cikis").value;
+            giris=new Date(giris);
+            cikis=new Date(cikis);
+            tarihFark=cikis-giris;
+            gunHesapla=Math.round(tarihFark/(1000*60*60*24));
+            alert(gunHesapla);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector(seçici)</title>
+    <script>
+        function degistir(){
+            document.querySelector("a").style.color="red";
+        }
+    </script>
+</head>
+<body>
+    <a href="https://www.google.com/">GOOGLE</a>
+    <a href="https://www.yandex.com/">YANDEX</a>
+    <a href="https://www.linkedin.com/">LİNKEDİN</a>
+    <input type="button" value="Basınız" onclick="degistir()">
+</body>
+</html>
+<!--eğer queryselector kullandığımızda hepsine etki etsin istiyorsak
+document.querySelectorAll("a").style.color="red"; şeklinde ya da 
+indis belirterek kullanabiliriz.-->

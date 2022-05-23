@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Tahmin Oyunu</title>
+</head>
+<body>
+    <script>
+        var rastgele=parseInt(Math.random()*100);
+        tahmin=0;
+        alert(rastgele);
+        for(sayac=1;sayac<=5;sayac++){
+            sayi=parseInt(prompt("Bir sayı giriniz: "));
+            if(sayi > rastgele){
+                alert("Sayınızı azaltın.");
+            }
+            else if(sayi < rastgele){
+                alert("Sayınızı arttırın.");
+            }
+            else{
+                alert("Tebrikler! Tahmininiz doğru.");
+                alert("Başarılı. "+sayac+". seferde bildiniz.");
+                tahmin=1;
+                break;
+            }
+            
+        }
+        if(tahmin==0){
+            alert("Üzgünüz. Hakkınız bitti. Tutulan sayı: "+rastgele);
+        }
+       /* if(tahmin=1){
+            alert("Başarılı. "+sayac+". seferde bildiniz.");
+        }*/
+    </script>
+</body>
+</html>

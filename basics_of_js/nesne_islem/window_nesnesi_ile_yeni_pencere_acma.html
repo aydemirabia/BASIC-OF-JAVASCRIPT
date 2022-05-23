@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" onclick="yenipencere('http:google.com',400,300,100,200)">GOOGLE</a>
+    <a href="#" onclick="yenipencere('http:yandex.com',400,250,120,400)">YANDEX</a>
+    <button onclick="kapat()">Kapat</button>
+    <script>
+        function yenipencere(adres,genislik,yukseklik,ust,sol){
+            parametre='width='+genislik+',height='+yukseklik+'left='+sol+',top='+ust;
+            pencere=window.open(adres,"_blank",parametre);
+        }
+        function kapat(){
+            pencere.close();
+        }
+        window.alert("Tamamlandı.");
+        window.prompt("Görüşleriniz: ");
+        window.confirm("Görüşlerinizden emin misiniz?");
+    </script>
+</body>
+</html>

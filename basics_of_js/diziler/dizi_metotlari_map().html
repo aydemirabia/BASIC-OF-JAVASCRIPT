@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dizi Metotları- map() & filter()</title>
+</head>
+
+<body>
+    <script>
+        var kirtasiye = ["Defter", "Kalem", "Boyama Kitabı", "Bant", "Silgi"];
+        yeniKirtasiye = kirtasiye.map(function (malzemeler) {
+            if (malzemeler == "Defter") {
+                return malzemeler.toUpperCase();
+            }
+            else {
+                return malzemeler.toLowerCase();
+            }
+        });
+        console.log(kirtasiye);
+        console.log(yeniKirtasiye);
+    </script>
+</body>
+
+</html>

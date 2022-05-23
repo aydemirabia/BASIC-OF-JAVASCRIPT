@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dizi Sıralama Metotları ve Form Elemanlarına Dizi Verilerini Aktarma</title>
+</head>
+
+<body>
+    <script>
+        var malzMiktari=[5,20,45,6,90];
+        var kirtasiye = ["Kalem", "Defter", "Silgi", "Ajanda", "Yapışkan", "Uhu"];
+        console.log(malzMiktari);
+        console.log(kirtasiye);
+        //sort(): alfabetik olarak sıralama yapar (a,b..z)
+        kirtasiye.sort();
+        malzMiktari.sort();
+        console.log(malzMiktari);
+        console.log(kirtasiye);
+        //reverse(): liste alfabetik olarak sondan başa doğru bir sıralama yaptırır.
+        //(z,y..a)
+        malzMiktari.reverse();
+        kirtasiye.reverse();
+        console.log(malzMiktari);
+        console.log(kirtasiye);
+        malzMiktari.sort(function(a, b){
+            return a-b;
+        });
+        console.log(malzMiktari);
+    </script>
+</body>
+
+</html>
+<!--
+    sort() kullanarak sıralama yapabiliriz.
+    ör dizi=[20,5,45,6,90] dizisinin sıraladığımızda
+    [20, 45, 5, 6, 90] şeklinde sıralar. Sıralamaya bakıldığında
+    45 sayısının 5 sayısından küçük olarak sıralanmıştır.
+    sort() fonksiyonunda sayısal bir sıralama yaptıracaksak:
+        dizi.sort(function(a, b){
+            return a-b;
+        });
+
+
+
+-->

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Nesnesi</title>
+</head>
+<body>
+    <script>
+        var aylar=["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+        "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+        var gunler=["Pazar","Pazartesi" ,"Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+        var tarih=new Date();
+        //yıl bilgisini almak için: .getFullYear()
+        yil=tarih.getFullYear();
+        //1-31 arasındaki günleri atar.
+        gun=tarih.getDate();
+        //0-11 arasındaki ayları verir.
+        ay=tarih.getMonth();
+        //.getDay(): bugünkü günün tarihini verir. 
+        haftaGun=tarih.getDay();
+        //getHours(): saat bilgisi alınır.
+        saat= tarih.getHours();
+        //.getMinutes(): dakika bilgisini alır.
+        dakika=tarih.getMinutes();
+        //.getSeconds(): saniye bilgisini alır.
+        saniye=tarih.getSeconds();
+        document.write(gun+"<br>");
+        document.write(aylar[ay]+"<br>");
+        document.write(yil+"<br>");
+        document.write(gunler[haftaGun]+"<br>");
+        document.write(saat+"<br>");
+        document.write(dakika+"<br>");
+        document.write(saniye+"<br>");
+    </script>
+</body>
+</html>

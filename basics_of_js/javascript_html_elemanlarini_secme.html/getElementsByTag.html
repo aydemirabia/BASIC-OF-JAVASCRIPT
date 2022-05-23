@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByTags</title>
+    <script>
+        function renkDegistir(){
+            for(i=0;i<3;i++){
+                document.getElementsByTagName("p")[i].style.color="red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Merhaba</p>
+    <p>Javascript</p>
+    <p>Dersleri</p>
+    <input type="button" value="Basınız" onclick="renkDegistir()"> 
+</body>
+</html>

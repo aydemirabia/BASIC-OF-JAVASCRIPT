@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else UYGULAMA</title>
+</head>
+<body>
+    Yabancı Dil: <input type="text" id="yabancidil">
+    <input type="button" value="Sonucu Göster" onclick="iseAlma()">
+    <script>
+        function iseAlma(){
+            var yabancidil=document.getElementById("yabancidil").value;
+            
+            if(yabancidil=="Almanca" || yabancidil=="İngilizce" || yabancidil=="almanca" || yabancidil=="ingilizce"){
+                alert("Tebrikler işe alındınız.")
+            }
+            else{
+                alert("İşe alımınız olumsuz sonuçlanmıştır.")
+            }
+        }
+    </script>
+</body>
+</html>

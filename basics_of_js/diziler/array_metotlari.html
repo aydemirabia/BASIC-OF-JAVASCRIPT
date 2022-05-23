@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Metotları</title>
+</head>
+<body>
+    <script>
+        var kirtasiye=["Kitap", "Kalem", "Defter", "Yapıştırıcı", "Silgi"];
+        console.log(kirtasiye);
+        var kirtasiye2=["Boyama Kitabı", "Karton", "Ürün Dosyası", "Cetvel"];
+        console.log(kirtasiye2);
+        /*
+        //dizinin sonuna eleman ekleme:
+        console.log(kirtasiye);
+        kirtasiye.push("Ajanda");
+        console.log(kirtasiye);
+        //dizinin son elemanını silme:
+        kirtasiye.pop();
+        console.log(kirtasiye);
+        //istenilen konumdan silme işlemi:
+        kirtasiye.splice(1,2);
+        console.log(kirtasiye);
+        //dizi elemanlarına güncelleme yapmak için:
+        kirtasiye.splice(1,2,"Boya Kalemi","Okul Çantası");
+        console.log(kirtasiye);
+        //listeyi tamamen silmek için:
+        kirtasiye.splice(0, kirtasiye.length);
+        console.log(kirtasiye);
+        */
+        //diziyi bölüp yeni bir dizi elde etmek için:
+        yenikirtasiye=kirtasiye.slice(3);
+        console.log(yenikirtasiye);
+        //iki farklı diziyi tek bir dizide birleştirme:
+        yeniDizi=yenikirtasiye.concat(kirtasiye2);
+        console.log(yeniDizi);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Olayları 2</title>
+    <script>
+        function olay(){
+            alert("Olay Gerçekleşti.");
+        }
+    </script>
+</head>
+<body>
+<form action="" onsubmit="olay()">
+    <p id="mesaj">Merhaba JS Öğrencisi</p>
+    <input type="text" id="metin" name="adsoyad">  
+    <input type="submit" id="btn" value="TIKLA">
+</form>    
+</body>
+</html>
+
+<!--
+    onfocus="olay()"
+    onblur="olay()"
+    onmouseover="olay()": p etiketine yazıldı, mouse üstüne tutulduğunda alert aktifleşir.
+    onmouseout="olay()": üstekinin tam tersi
+    onmousemove="olay()"
+    onmousedown="olay()"
+    onKeydown(): <input type="text" id="metin" onkeydown="olay()">  yazıldı.
+    onresize="olay()": <body onresize="olay()">
+    onsubmit=<form action="" onsubmit="olay()"></form>
+    <form action="" onsubmit="olay()">
+    <p id="mesaj">Merhaba JS Öğrencisi</p>
+    <input type="text" id="metin" name="adsoyad">  
+    <input type="submit" id="btn" value="TIKLA">
+    onerror
+</form>    
+-->

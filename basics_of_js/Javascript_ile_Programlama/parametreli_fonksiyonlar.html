@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kare ve Küp Hesabı</title>
+</head>
+<!--Girilen sayıların karesini ve küpünü alınız.-->
+<body>
+    <p id="toplam"></p>
+    <script>
+        function kare_Al(sayi){
+            var kareAlma =sayi*sayi;
+            return kareAlma;
+        }
+        function kup_Al(sayi){
+            var kupAlma=sayi*sayi*sayi;
+            return kupAlma;
+        }
+        topla= kare_Al(4)+kup_Al(2);
+        document.getElementById("toplam").innerHTML=topla;
+    </script>
+    
+</body>
+</html>

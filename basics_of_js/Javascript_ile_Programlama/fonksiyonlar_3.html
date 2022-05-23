@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametreli Fonksiyonlar</title>
+</head>
+<body>
+    <p id="cevre"></p>
+    <script>
+        function dikdortgenCevre(uzunKenar, kisaKenar){
+            cevre = 2*(uzunKenar + kisaKenar);
+            return cevre;
+        }
+        dikdortgen= dikdortgenCevre(30,25);
+        document.getElementById("cevre").innerHTML=dikdortgen;
+    </script>
+</body>
+</html>

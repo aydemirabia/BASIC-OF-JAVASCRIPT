@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS</title>
+</head>
+<body>
+    <input type="checkbox" name="hobi">Kitap<br>
+    <input type="checkbox" name="hobi">Resim<br>
+    <input type="checkbox" name="hobi">Spor<br>
+    <input type="checkbox" name="hobi">Gezi<br>
+    <input type="checkbox" name="hobi">Fotoğraf<br>
+    <input type="checkbox" name="hobi">Seyahat<br>
+    <input type="checkbox" name="hobi">Müzik<br>
+    <input type="checkbox" name="hobi">Alışveriş<br>
+    <input type="checkbox" name="hobi">Oyun<br>
+    <input type="button" value="Tümünü Seç" onclick="tumunuSec()">
+    <script>
+        function tumunuSec(){
+            toplamSayi=document.getElementsByName("hobi").length;
+            for(i=0;i<toplamSayi;i++){
+                document.getElementsByName("hobi")[i].checked=true;
+            }
+        }
+    </script>
+</body>
+</html>

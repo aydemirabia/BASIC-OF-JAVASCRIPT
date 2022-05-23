@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName</title>
+    <style>
+        .mavi{color: blue;}
+        .kirmizi{color: red;}
+        .yellow{color: yellow;}
+    </style>
+    <script>
+        function renkDegistir(){
+            for(i=0;i<3;i++){
+                document.getElementsByClassName("mavi")[i].style.color="pink";
+                
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <p class="mavi">Merhaba</p>
+    <p class="kirmizi">Kırmızı</p>
+    <p class="mavi">Mavi</p>
+    <p class="sari">Sarı</p>
+    <input type="button" value="Basınız" onclick="renkDegistir()">
+</body>
+</html>

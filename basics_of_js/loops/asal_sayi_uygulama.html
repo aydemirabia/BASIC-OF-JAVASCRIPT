@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asal Sayı Uygulaması</title>
+</head>
+<body>
+    <script>
+        var sayi=parseInt(prompt("Bir sayı giriniz: "));
+        asal=0;
+        for(sayac=2;sayac<sayi/2;sayac++){
+            if(sayi % sayac==0){
+                alert("Sayınız asal değildir.");
+                asal=1;
+                break;
+            }
+        }
+        if(asal==0){
+            alert(sayi+" sayısı asal sayıdır.");
+        }
+    </script>
+</body>
+</html>

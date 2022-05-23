@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Nesnesi</title>
+</head>
+<body>
+    <script>
+        var cumle="Çocuklar güverteye çıktılar, martılara ekmek attılar.";
+        /*var uzunluk=cumle.length;
+        alert(uzunluk);*/
+        aranan=cumle.indexOf("çıktılar");
+        alert(aranan);
+        //cümleyi bölme: 
+        //.slice(37,46) biçimi 37. indisden başlayıp 46. indise kadar alır 46 dahil DEĞİL
+        //sondan da karakter almak istiyorsak örn .slice(-14, -9) şeklinde negatif olarak değerlerimizi yazabiliriz.
+        yeniCumle=cumle.slice(37,46);
+        alert(yeniCumle);
+        //cümleyi bölme: .substr(37, 13) biçimiyse 37. indisden başlayıp belirlediğimiz değere kadar ilerler.
+        yenicumle=cumle.substr(37, 13);
+        alert(yenicumle);
+        //cümle değiştirme
+        degistir=cumle.replace("ekmek", "simit");
+        alert(degistir);
+    </script>
+</body>
+</html>

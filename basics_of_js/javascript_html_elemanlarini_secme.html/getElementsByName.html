@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByName Metodu</title>
+    <script>
+        function tumunusec(){
+            for(i=0;i<=5;i++){
+                document.getElementsByName("hobi")[i].checked=true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        Hobileriniz: <br>
+        <input type="checkbox" name="hobi">Seyahat Etmek<br>
+        <input type="checkbox" name="hobi">Spor Yapmak<br>
+        <input type="button" value="Tümünü Seç" onclick="tumunusec()">
+<!--başlangıçta checkboxların seçili hale gelmesini istiyorsak
+<input type="checkbox" name="hobi" CHECKED>Seyahat Etmek<br> şeklinde
+yazmamız lazım.-->
+
+    </form>
+</body>
+</html>
